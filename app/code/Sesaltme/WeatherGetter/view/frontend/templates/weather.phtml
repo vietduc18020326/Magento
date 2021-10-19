@@ -1,0 +1,112 @@
+<?php
+/** @var \Sesaltme\WeatherGetter\Block\Weather $block */
+?>
+<?php
+    $result = $block->getWeatherInformation();
+    $found = $result->cod == '200';
+    if ($found) {
+      $city = $result->city['name'] . ', ' . $result->city['country'];
+      $data = [];
+      for ($i = 0;$i < count($result->list);$i+=8) {
+        $date = $result->list[$i];
+        $el =[];
+        $el['weekday'] = date('l', $date['dt']);
+        $el['weekdayShort'] = date('D', $date['dt']);
+        $el['date'] = date('d M Y', $date['dt']);
+        $el['temp'] = round($date['main']['temp']);
+        $el['precipitation'] = $date['pop'] * 100;
+        $el['humidity'] = $date['main']['humidity'];
+        $el['wind'] = $date['wind']['speed'];
+        $el['desc'] = ucwords($date['weather'][0]['description']);
+        $el['icon'] = 'http://openweathermap.org/img/wn/' . $date['weather'][0]['icon'] . '@2x.png';
+        $data[] = $el;
+      }
+    }
+?>
+
+<div id="weather-container">
+  <div class="container">
+    <div class="weather-side">
+      <div class="weather-gradient"></div>
+      <div class="date-container">
+        <h2 class="date-dayname">Tuesday</h2><span class="date-day">15 Jan 2019</span>
+        <i class="fas fa-map-marker-alt"></i>
+        <span class="location"><?php if($found) echo $city; ?></span>
+      </div>
+      <div class="weather-container">
+        <img class="weather-icon" src="" alt="temp">
+        <h1 class="weather-temp">29°C</h1>
+        <h3 class="weather-desc">Sunny</h3>
+      </div>
+    </div>
+    <div class="info-side">
+      <div class="today-info-container">
+        <div class="today-info">
+          <div class="precipitation">
+            <span class="title">PRECIPITATION</span><span class="value">0 %</span>
+            <div class="clear"></div>
+          </div>
+          <div class="humidity"> <span class="title">HUMIDITY</span><span class="value">34 %</span>
+            <div class="clear"></div>
+          </div>
+          <div class="wind"> <span class="title">WIND</span><span class="value">0 m/s</span>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="week-container">
+        <ul class="week-list">
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div class="location-container">
+        <form action="/weather">
+          <input class="form-control" placeholder="Enter city name" name="city"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  require(['jquery'], function ($) {
+    const data = <?php if ($found) echo json_encode($data) ?>;
+    if (!data) {
+      $(".container").css("display", "none");
+    } else {
+      display(data);
+      $(".week-list>li").click(function (event) {
+        const target = $(event.target).closest(".week-list>li");
+        makeActive(parseInt(target.attr("index")));
+      });
+    }
+    
+    function display(data) {
+      for (i = 0; i < data.length; ++i) {
+        createListItem(data[i], i);
+      }
+      makeActive(0);
+    }
+
+    function makeActive(index) {
+      const date = data[index];
+      $(".date-dayname").text(date.weekday);
+      $(".date-day").text(date.date);
+      $(".weather-icon").attr("src", date.icon);
+      $(".weather-temp").text(`${date.temp}°C`);
+      $(".weather-desc").text(date.desc);
+      $(".precipitation .value").text(`${date.precipitation} %`);
+      $(".humidity .value").text(`${date.humidity} %`);
+      $(".wind .value").text(`${date.wind} m/s`);
+
+      $(".week-list>li").removeClass("active");
+      $(`.week-list>li[index=${index}]`).addClass("active");
+    }
+
+    function createListItem(date, index) {
+      $(".week-list").append(
+        `<li index="${index}"><img class="day-icon" src="${date.icon}"/></img><span class="day-name">${date.weekdayShort}</span><span class="day-temp">${date.temp}°C</span></li>`
+      );
+    }
+  });
+</script>
