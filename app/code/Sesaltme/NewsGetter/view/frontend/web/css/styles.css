@@ -1,0 +1,35 @@
+.bar {
+    background-color: #ddf0ff;
+}
+
+a.bar-item {
+    color: #e33;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card a:hover {
+    text-decoration: none!important;
+}
+
+.card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card-img-top, .card-img-top img {
+    height: 225px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
