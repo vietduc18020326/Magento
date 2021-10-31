@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4aa5d7394e1110473c163e11c8d36072",
+    "content-hash": "b138e2185275f1963b60e8d138325b2f",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -491,6 +491,198 @@
                 "source": "https://github.com/beberlei/assert/tree/v3.3.1"
             },
             "time": "2021-04-18T20:11:03+00:00"
+        },
+        {
+            "name": "boolfly/module-base",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/boolfly/base.git",
+                "reference": "f3aa21b7fd624b07bc7d8830f7a147609f25238f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/boolfly/base/zipball/f3aa21b7fd624b07bc7d8830f7a147609f25238f",
+                "reference": "f3aa21b7fd624b07bc7d8830f7a147609f25238f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.1.3||~7.2.0||~7.3.0||~7.4.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Boolfly\\Base\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "Core module",
+            "support": {
+                "issues": "https://github.com/boolfly/base/issues",
+                "source": "https://github.com/boolfly/base/tree/v1.0.3"
+            },
+            "time": "2021-09-10T09:39:41+00:00"
+        },
+        {
+            "name": "boolfly/module-giaohangnhanh",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/boolfly/giaohangnhanh.git",
+                "reference": "e505a3827dd9e388af7b6c3c12024f5bf3395380"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/boolfly/giaohangnhanh/zipball/e505a3827dd9e388af7b6c3c12024f5bf3395380",
+                "reference": "e505a3827dd9e388af7b6c3c12024f5bf3395380",
+                "shasum": ""
+            },
+            "require": {
+                "boolfly/module-integration-base": "^1.0.0",
+                "php": "~7.1.3||~7.2.0||~7.3.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Boolfly\\GiaoHangNhanh\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "Giao hang nhanh shipping method",
+            "support": {
+                "issues": "https://github.com/boolfly/giaohangnhanh/issues",
+                "source": "https://github.com/boolfly/giaohangnhanh/tree/master"
+            },
+            "time": "2020-07-06T04:58:41+00:00"
+        },
+        {
+            "name": "boolfly/module-integration-base",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/boolfly/integration-base.git",
+                "reference": "abf05672e6929a95c786014b7b3bb380b949374e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/boolfly/integration-base/zipball/abf05672e6929a95c786014b7b3bb380b949374e",
+                "reference": "abf05672e6929a95c786014b7b3bb380b949374e",
+                "shasum": ""
+            },
+            "require": {
+                "boolfly/module-base": "^1.0.0",
+                "php": "~7.1.3||~7.2.0||~7.3.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Boolfly\\IntegrationBase\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "Boolfly Integration",
+            "support": {
+                "issues": "https://github.com/boolfly/integration-base/issues",
+                "source": "https://github.com/boolfly/integration-base/tree/v1.0.0"
+            },
+            "time": "2020-06-19T04:27:50+00:00"
+        },
+        {
+            "name": "boolfly/module-momo-wallet",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/boolfly/momo-wallet.git",
+                "reference": "d199de8849bb436c1441120dd9c714b9bfc2ea3b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/boolfly/momo-wallet/zipball/d199de8849bb436c1441120dd9c714b9bfc2ea3b",
+                "reference": "d199de8849bb436c1441120dd9c714b9bfc2ea3b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.1.3||~7.2.0||~7.3.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Boolfly\\MomoWallet\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "Momo Wallet Payment Gateway",
+            "support": {
+                "issues": "https://github.com/boolfly/momo-wallet/issues",
+                "source": "https://github.com/boolfly/momo-wallet/tree/v1.0.2"
+            },
+            "time": "2020-04-22T07:50:42+00:00"
+        },
+        {
+            "name": "boolfly/module-zalopay",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/boolfly/zalopay.git",
+                "reference": "b688ec5555f4a22f3d12b6fb17d43e4a2d4a2886"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/boolfly/zalopay/zipball/b688ec5555f4a22f3d12b6fb17d43e4a2d4a2886",
+                "reference": "b688ec5555f4a22f3d12b6fb17d43e4a2d4a2886",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.1.3||~7.2.0||~7.3.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Boolfly\\ZaloPay\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "ZaloPay Payment Gateway",
+            "support": {
+                "issues": "https://github.com/boolfly/zalopay/issues",
+                "source": "https://github.com/boolfly/zalopay/tree/v1.0.0"
+            },
+            "time": "2020-05-20T10:15:06+00:00"
         },
         {
             "name": "braintree/braintree_php",
@@ -26484,5 +26676,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
