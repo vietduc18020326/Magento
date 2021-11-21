@@ -1,8 +1,8 @@
 ### Final
 
 ### Process
-
--   Banch "moudle": design moudle ( Currency, Weather, Newsletter ).
+-   Branch "main": create base project and merge moudle, theme from branches ---> complete.
+-   Banch "module": design module ( Currency, Weather, Newsletter ).
 -   Branch "final": degign theme.
 
 ### Integrated modules:
