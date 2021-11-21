@@ -1,9 +1,16 @@
+### Final
+
+### Process
+
+-   Banch "moudle": design moudle ( Currency, Weather, Newsletter ).
+-   Branch "final": degign theme.
+
 ### Integrated modules:
 
--   Make payment using Momo, ZaloPay, VNPay
--   Weather prediction
--   News articles (from vnexpress)
--   Exchange rate
+-   Make payment using Momo, ZaloPay, VNPay.
+-   Weather prediction.
+-   News articles (from vnexpress).
+-   Exchange rate.
 
 ### Initial Setup:
 
