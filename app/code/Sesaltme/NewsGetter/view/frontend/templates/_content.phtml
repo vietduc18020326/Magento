@@ -1,0 +1,44 @@
+<?php
+?>
+<div class="container">
+  <div class="bar d-flex justify-content-start border border-primary mb-3">
+    <a href="/news/business" class="bar-item p-4 fw-bold <?= $uri == '/news/business' ? 'bg-primary text-white' : ''  ?>"><div>Kinh tế</div></a>
+    <a href="/news/travel" class="bar-item p-4 fw-bold <?= $uri == '/news/travel' ? 'bg-primary text-white' : ''  ?>"><div >Du lịch</div></a>
+    <a href="/news/sport" class="bar-item p-4 fw-bold <?= $uri == '/news/sport' ? 'bg-primary text-white' : ''  ?>"><div >Thể thao</div></a>
+    <a href="/news/entertainment" class="bar-item p-4 fw-bold <?= $uri == '/news/entertainment' ? 'bg-primary text-white' : ''  ?>"><div >Giải trí</div></a>
+    <a href="/news" class="bar-item p-4 fw-bold <?= $uri == '/news' ? 'bg-primary text-white' : ''  ?>"><div >Tin nổi bật</div></a>
+    <a href="/news/latest" class="bar-item p-4 fw-bold <?= $uri == '/news/latest' ? 'bg-primary text-white' : ''  ?>"><div >Tin mới nhất</div></a>
+  </div>
+  <!-- <h2 class="text-primary fw-bold"><?= $data['title'] ?></h2> -->
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 my-5">
+    <?php foreach($articles as $article): 
+      $desc = $block->parseDescription($article['description']);
+    ?>
+    <div class="col">
+      <div class="card shadow rounded-2">
+        <div class="card-img-top">
+          <a href="<?= $article['link'] ?>" target="blank">
+            <img alt="Thumbnail" src="<?= $desc['img'] ?>">
+          </a>
+        </div>
+        <div class="card-body">
+          <a href="<?= $article['link'] ?>" target="blank"><h2 class="fw-bold"><?= $article['title'] ?></h2></a>
+          <p class="card-text"><?= $desc['desc'] ?></p>
+          <div class="d-flex justify-content-end">
+            <small class="text-muted"><?= date('d/m/Y', strtotime($article['pubDate'])) ?></small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <?php endforeach; ?>
+  </div>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination pagination-lg justify-content-center">
+    <?php for($i=1; $i <= $block->getTotalPages(); $i++): ?>
+      <li class="page-item <?= $page == $i ? 'active' : ''?>">
+        <a class="page-link" href="<?= "$uri?page=$i" ?>" tabindex="-1" aria-disabled="true"><?= $i ?></a>
+      </li>
+    <?php endfor; ?>
+    </ul>
+  </nav>
+</div>

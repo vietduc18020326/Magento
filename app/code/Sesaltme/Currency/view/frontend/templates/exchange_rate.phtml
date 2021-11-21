@@ -1,0 +1,38 @@
+<?php
+/** @var \Sesaltme\Currency\Block\Currency $block */
+?>
+<?php
+  $result = $block->getExchangeRateInfo()->ExrateList;
+  $source = $result['Source'];
+?>
+
+<div class="container my-2" id="exchange-rate">
+  <table class="table table-hover table-striped table-bordered text-center">
+    <thead class="bg-success text-white border-white">
+      <tr>
+        <th colspan="2">Ngoại tệ</th>
+        <th colspan="2">Mua</th>
+        <th rowspan="2">Bán</th>
+      </tr>
+      <tr>
+        <th>Tên ngoại tệ</th>
+        <th>Mã NT</th>
+        <th>Tiền mặt</th>
+        <th>Chuyển khoản</th>
+      </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($result['Exrate'] as $rate): ?>
+      <?php $data = $rate['_attribute']; ?>
+      <tr>
+        <td><?= $data['CurrencyName']; ?></td>
+        <td><?= $data['CurrencyCode']; ?></td>
+        <td><?= $data['Buy']; ?></td>
+        <td><?= $data['Transfer']; ?></td>
+        <td><?= $data['Sell']; ?></td>
+      </tr>
+    <?php endforeach;?>
+    </tbody>
+  </table>
+  <div class="text-end fs-6">Source: <?= $source ?></div>
+</div>
