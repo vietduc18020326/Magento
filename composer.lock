@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4aa5d7394e1110473c163e11c8d36072",
+    "content-hash": "968ffce046f4fb7217f83adab994a020",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -491,6 +491,198 @@
                 "source": "https://github.com/beberlei/assert/tree/v3.3.1"
             },
             "time": "2021-04-18T20:11:03+00:00"
+        },
+        {
+            "name": "boolfly/module-base",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/boolfly/base.git",
+                "reference": "2ab1fb483e3093ab48c7e60d15cce68a175e4554"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/boolfly/base/zipball/2ab1fb483e3093ab48c7e60d15cce68a175e4554",
+                "reference": "2ab1fb483e3093ab48c7e60d15cce68a175e4554",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.1.3||~7.2.0||~7.3.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Boolfly\\Base\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "Core module",
+            "support": {
+                "issues": "https://github.com/boolfly/base/issues",
+                "source": "https://github.com/boolfly/base/tree/master"
+            },
+            "time": "2020-09-03T15:08:25+00:00"
+        },
+        {
+            "name": "boolfly/module-giaohangnhanh",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/boolfly/giaohangnhanh.git",
+                "reference": "e505a3827dd9e388af7b6c3c12024f5bf3395380"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/boolfly/giaohangnhanh/zipball/e505a3827dd9e388af7b6c3c12024f5bf3395380",
+                "reference": "e505a3827dd9e388af7b6c3c12024f5bf3395380",
+                "shasum": ""
+            },
+            "require": {
+                "boolfly/module-integration-base": "^1.0.0",
+                "php": "~7.1.3||~7.2.0||~7.3.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Boolfly\\GiaoHangNhanh\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "Giao hang nhanh shipping method",
+            "support": {
+                "issues": "https://github.com/boolfly/giaohangnhanh/issues",
+                "source": "https://github.com/boolfly/giaohangnhanh/tree/master"
+            },
+            "time": "2020-07-06T04:58:41+00:00"
+        },
+        {
+            "name": "boolfly/module-integration-base",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/boolfly/integration-base.git",
+                "reference": "abf05672e6929a95c786014b7b3bb380b949374e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/boolfly/integration-base/zipball/abf05672e6929a95c786014b7b3bb380b949374e",
+                "reference": "abf05672e6929a95c786014b7b3bb380b949374e",
+                "shasum": ""
+            },
+            "require": {
+                "boolfly/module-base": "^1.0.0",
+                "php": "~7.1.3||~7.2.0||~7.3.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Boolfly\\IntegrationBase\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "Boolfly Integration",
+            "support": {
+                "issues": "https://github.com/boolfly/integration-base/issues",
+                "source": "https://github.com/boolfly/integration-base/tree/v1.0.0"
+            },
+            "time": "2020-06-19T04:27:50+00:00"
+        },
+        {
+            "name": "boolfly/module-momo-wallet",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/boolfly/momo-wallet.git",
+                "reference": "d199de8849bb436c1441120dd9c714b9bfc2ea3b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/boolfly/momo-wallet/zipball/d199de8849bb436c1441120dd9c714b9bfc2ea3b",
+                "reference": "d199de8849bb436c1441120dd9c714b9bfc2ea3b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.1.3||~7.2.0||~7.3.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Boolfly\\MomoWallet\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "Momo Wallet Payment Gateway",
+            "support": {
+                "issues": "https://github.com/boolfly/momo-wallet/issues",
+                "source": "https://github.com/boolfly/momo-wallet/tree/v1.0.2"
+            },
+            "time": "2020-04-22T07:50:42+00:00"
+        },
+        {
+            "name": "boolfly/module-zalopay",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/boolfly/zalopay.git",
+                "reference": "b688ec5555f4a22f3d12b6fb17d43e4a2d4a2886"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/boolfly/zalopay/zipball/b688ec5555f4a22f3d12b6fb17d43e4a2d4a2886",
+                "reference": "b688ec5555f4a22f3d12b6fb17d43e4a2d4a2886",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.1.3||~7.2.0||~7.3.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Boolfly\\ZaloPay\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "ZaloPay Payment Gateway",
+            "support": {
+                "issues": "https://github.com/boolfly/zalopay/issues",
+                "source": "https://github.com/boolfly/zalopay/tree/v1.0.0"
+            },
+            "time": "2020-05-20T10:15:06+00:00"
         },
         {
             "name": "braintree/braintree_php",
@@ -17160,6 +17352,129 @@
                 "source": "https://github.com/magento/zf1/tree/1.14.5"
             },
             "time": "2020-12-02T21:12:59+00:00"
+        },
+        {
+            "name": "magepal/magento2-core",
+            "version": "1.1.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/magepal/magento2-core.git",
+                "reference": "83fbffc0d540f82f55e0623719e08ecacc9c7e18"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magepal/magento2-core/zipball/83fbffc0d540f82f55e0623719e08ecacc9c7e18",
+                "reference": "83fbffc0d540f82f55e0623719e08ecacc9c7e18",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "MagePal\\Core\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Renon Stewart",
+                    "email": "renon@magepal.com",
+                    "homepage": "https://www.magepal.com/",
+                    "role": "Leader"
+                }
+            ],
+            "description": "MagePal core extension",
+            "homepage": "https://www.magepal.com/",
+            "keywords": [
+                "magento 2",
+                "magepal core extension"
+            ],
+            "support": {
+                "email": "support@magepal.com",
+                "issues": "https://github.com/magepal/magento2-core/issues/",
+                "source": "https://github.com/magepal/magento2-core/tree/1.1.12"
+            },
+            "time": "2021-05-29T19:47:51+00:00"
+        },
+        {
+            "name": "magepal/magento2-customshippingrate",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/magepal/magento2-custom-shipping-rate.git",
+                "reference": "4cf5807c9141b508873d2dec5886b40ebdcc8b32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magepal/magento2-custom-shipping-rate/zipball/4cf5807c9141b508873d2dec5886b40ebdcc8b32",
+                "reference": "4cf5807c9141b508873d2dec5886b40ebdcc8b32",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "100.0.*|100.1.*|101.0.*|102.0.*|103.0.*",
+                "magento/module-backend": "100.0.*|100.1.*|100.2.*|101.0.*|102.0.*",
+                "magepal/magento2-core": ">=1.1.10",
+                "php": "~5.6.0|7.0.2|7.0.4|~7.0.6|~7.1.0|~7.1.3|~7.2.0|~7.3.0|~7.4.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "MagePal\\CustomShippingRate\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Renon Stewart",
+                    "email": "renon@magepal.com",
+                    "homepage": "http://www.magepal.com/",
+                    "role": "Leader"
+                }
+            ],
+            "description": "Set your own Custom Shipping rates for admin order or create predefined shipping methods for frontend customers",
+            "homepage": "http://www.magepal.com/",
+            "keywords": [
+                "custom shipping",
+                "custom shipping module",
+                "free shipping",
+                "magento 2",
+                "magento 2 free shipping extension",
+                "magento shipping",
+                "magento2",
+                "magento2 how to create custom shipping method",
+                "magento2 shipping extension",
+                "magento2 shipping module",
+                "shipping",
+                "shipping extension",
+                "shipping method",
+                "shipping rates"
+            ],
+            "support": {
+                "email": "support@magepal.com",
+                "issues": "https://github.com/magepal/magento2-custom-shipping-rate/issues/",
+                "source": "https://github.com/magepal/magento2-custom-shipping-rate/tree/1.7.0"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/magepal",
+                    "type": "custom"
+                }
+            ],
+            "time": "2021-02-27T03:37:29+00:00"
         },
         {
             "name": "monolog/monolog",

@@ -71,8 +71,8 @@ services:
       ADMINER_DEFAULT_SERVER: mysql
       ADMINER_DESIGN: "pappu687"
   elasticsearch:
-    restart: always
     image: elasticsearch:7.11.2
+    restart: always
     ports:
       - "9200:9200"
       - "9300:9300"
