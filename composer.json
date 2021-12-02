@@ -15,6 +15,7 @@
         "boolfly/module-giaohangnhanh": "^1.0",
         "boolfly/module-momo-wallet": "^1.0",
         "boolfly/module-zalopay": "^1.0",
+        "galacticlabs/disable-compare-products": "^1.0",
         "magento/composer-root-update-plugin": "~1.1",
         "magento/product-community-edition": "2.4.2-p1",
         "magepal/magento2-customshippingrate": "^1.7"
