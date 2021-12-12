@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "968ffce046f4fb7217f83adab994a020",
+    "content-hash": "b5bc2dc0f8b3231102743cd14779627c",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -1898,6 +1898,40 @@
                 "source": "https://github.com/ezimuel/ringphp/tree/1.1.2"
             },
             "time": "2020-02-14T23:51:21+00:00"
+        },
+        {
+            "name": "galacticlabs/disable-compare-products",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/galacticlabs/disable-compare-products.git",
+                "reference": "d6d5639ae1fdf7a3e665adcc9430a278aabe4322"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/galacticlabs/disable-compare-products/zipball/d6d5639ae1fdf7a3e665adcc9430a278aabe4322",
+                "reference": "d6d5639ae1fdf7a3e665adcc9430a278aabe4322",
+                "shasum": ""
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "GalacticLabs\\DisableCompareProducts\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Disable compare products functionality",
+            "support": {
+                "issues": "https://github.com/galacticlabs/disable-compare-products/issues",
+                "source": "https://github.com/galacticlabs/disable-compare-products/tree/1.0.1"
+            },
+            "time": "2018-05-23T19:50:07+00:00"
         },
         {
             "name": "google/recaptcha",
@@ -26799,5 +26833,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
